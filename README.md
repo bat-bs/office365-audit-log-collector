@@ -110,10 +110,11 @@ OfficeAuditLogCollector(.exe) %tenant_id% %client_key% %secret_key% --config %pa
 To run the Docker Image use the following syntax:
 ```bash
 docker run \
-   -e TENANT_ID=\%\%Tenant\-ID\%\% \
-   -e CLIENT_KEY=\%\%Client\-Key\%\% \ 
-   -e SECRET_KEY=\%\%Secret\-Key\%\% \
-   -v ${PWD}/ConfigExamples/fluentd.yaml:/app/config.yaml oac
+   -e TENANT_ID=***REMOVED*** \
+   -e CLIENT_KEY=***REMOVED*** \ 
+   -e SECRET_KEY=***REMOVED*** \
+   -v ${PWD}/ConfigExamples/fluentd.yaml:/app/config.yaml \
+   ghcr.io/bat-bs/office365-audit-log-collector:latest
 ```
 To create a config file you can start with the 'fullConfig.yaml' from the ConfigExamples folder. This has all the 
 possible options and some explanatory comments. Cross-reference with a config example using the output(s) of your choice, and you
