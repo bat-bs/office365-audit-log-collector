@@ -1,16 +1,7 @@
-# Anouncements:
-
-- I was asked to write an article for the Graylog community, giving a more detailed look at how to use
-this tool. If this might be useful to you, you can find it 
-[here](https://community.graylog.org/t/collecting-office365-azuread-audit-logs-using-office-audit-collector/23925).
-
-- Also, shoutout to [Jetbrains](https://www.jetbrains.com/all/) 
-for sponsoring an all product license for their IDEs for this open source
-project. Much appreciated.
-- The 'resume' parameter has been deprecated. Sometimes logs are published to the API with a delay
-and this causes issues with the 'resume' parameter. In hindsight this parameter was a mistake. It now
-generates a warning when used, but in the future it will be removed. If you are using it, please consider
-setting it to 'false'. If you were using it to prevent duplicate logs, set 'skipKnownLogs' to true instead.
+> [!NOTE]  
+> This Repo Contains a Containerised Version of the office365-audit-log-collector. <br />
+> There where no changes to the code, so just the Pre-Build Binary is containerized. <br />
+> This May Change in the Future. [How to Deploy?](#running-the-collector)
 
 # Office365 audit log collector
 
